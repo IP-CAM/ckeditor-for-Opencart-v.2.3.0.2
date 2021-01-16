@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>CKEditor v4.15.1 Full</name>
+    <code>ckeditor_v4_15_1_full</code>
+    <version>1.0</version>
+    <author>xxvirusxx</author>
+	<link>https://www.free-time-info.com/en/</link>
+
+
+	<file path="admin/view/template/catalog/{category_form,information_form,product_form}*.tpl">
+		<operation>
+			<search><![CDATA[<script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>]]></search>
+			<add position="replace" offset="3"><![CDATA[
+  <script type="text/javascript" src="view/javascript/ckeditor/ckeditor.js"></script> 
+  <script type="text/javascript" src="view/javascript/ckeditor/adapters/jquery.js"></script> 
+		]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[class="form-control summernote"]]></search>
+			<add position="replace"><![CDATA[class="form-control ckeditor"]]></add>
+		</operation>
+	</file>
+
+	<file path="admin/view/template/extension/module/html.tpl">
+		<operation>
+			<search><![CDATA[<script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>]]></search>
+			<add position="replace" offset="3"><![CDATA[
+  <script type="text/javascript" src="view/javascript/ckeditor/ckeditor.js"></script> 
+  <script type="text/javascript" src="view/javascript/ckeditor/adapters/jquery.js"></script> 
+		]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[class="form-control summernote"]]></search>
+			<add position="replace"><![CDATA[class="form-control ckeditor"]]></add>
+		</operation>
+	</file>
+
+	<file path="admin/view/template/marketing/contact.tpl">
+		<operation>
+			<search><![CDATA[<script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>]]></search>
+			<add position="replace" offset="2"><![CDATA[
+  <script type="text/javascript" src="view/javascript/ckeditor/ckeditor.js"></script> 
+  <script type="text/javascript" src="view/javascript/ckeditor/adapters/jquery.js"></script> 
+		]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[class="form-control summernote"]]></search>
+			<add position="replace"><![CDATA[class="form-control ckeditor"]]></add>
+		</operation>
+	</file>
+</modification>
